@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1791681A136B612A0019DBA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17916819136B612A0019DBA2 /* UIKit.framework */; };
+		1791681C136B612A0019DBA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1791681B136B612A0019DBA2 /* Foundation.framework */; };
+		1791681E136B612A0019DBA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1791681D136B612A0019DBA2 /* CoreGraphics.framework */; };
+		17916824136B612A0019DBA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17916822136B612A0019DBA2 /* InfoPlist.strings */; };
+		17916827136B612A0019DBA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17916826136B612A0019DBA2 /* main.m */; };
+		1791682A136B612A0019DBA2 /* IAP_SampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17916829136B612A0019DBA2 /* IAP_SampleAppDelegate.m */; };
+		1791682D136B612A0019DBA2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1791682B136B612A0019DBA2 /* MainWindow.xib */; };
+		17916830136B612A0019DBA2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1791682F136B612A0019DBA2 /* RootViewController.m */; };
+		17916833136B612A0019DBA2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17916831136B612A0019DBA2 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17916815136B612A0019DBA2 /* IAP Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAP Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17916819136B612A0019DBA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1791681B136B612A0019DBA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1791681D136B612A0019DBA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17916821136B612A0019DBA2 /* IAP Sample-Info.plist */ = {isa = PBXFileReference; path = "IAP Sample-Info.plist"; sourceTree = "<group>"; };
+		17916823136B612A0019DBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17916825136B612A0019DBA2 /* IAP Sample-Prefix.pch */ = {isa = PBXFileReference; path = "IAP Sample-Prefix.pch"; sourceTree = "<group>"; };
+		17916826136B612A0019DBA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17916828136B612A0019DBA2 /* IAP_SampleAppDelegate.h */ = {isa = PBXFileReference; path = IAP_SampleAppDelegate.h; sourceTree = "<group>"; };
+		17916829136B612A0019DBA2 /* IAP_SampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAP_SampleAppDelegate.m; sourceTree = "<group>"; };
+		1791682C136B612A0019DBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1791682E136B612A0019DBA2 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		1791682F136B612A0019DBA2 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		17916832136B612A0019DBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17916812136B612A0019DBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1791681A136B612A0019DBA2 /* UIKit.framework in Frameworks */,
+				1791681C136B612A0019DBA2 /* Foundation.framework in Frameworks */,
+				1791681E136B612A0019DBA2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1791680A136B61290019DBA2 = {
+			isa = PBXGroup;
+			children = (
+				1791681F136B612A0019DBA2 /* IAP Sample */,
+				17916818136B612A0019DBA2 /* Frameworks */,
+				17916816136B612A0019DBA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17916816136B612A0019DBA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17916815136B612A0019DBA2 /* IAP Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17916818136B612A0019DBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17916819136B612A0019DBA2 /* UIKit.framework */,
+				1791681B136B612A0019DBA2 /* Foundation.framework */,
+				1791681D136B612A0019DBA2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1791681F136B612A0019DBA2 /* IAP Sample */ = {
+			isa = PBXGroup;
+			children = (
+				17916828136B612A0019DBA2 /* IAP_SampleAppDelegate.h */,
+				17916829136B612A0019DBA2 /* IAP_SampleAppDelegate.m */,
+				1791682B136B612A0019DBA2 /* MainWindow.xib */,
+				1791682E136B612A0019DBA2 /* RootViewController.h */,
+				1791682F136B612A0019DBA2 /* RootViewController.m */,
+				17916831136B612A0019DBA2 /* RootViewController.xib */,
+				17916820136B612A0019DBA2 /* Supporting Files */,
+			);
+			path = "IAP Sample";
+			sourceTree = "<group>";
+		};
+		17916820136B612A0019DBA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17916821136B612A0019DBA2 /* IAP Sample-Info.plist */,
+				17916822136B612A0019DBA2 /* InfoPlist.strings */,
+				17916825136B612A0019DBA2 /* IAP Sample-Prefix.pch */,
+				17916826136B612A0019DBA2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17916814136B612A0019DBA2 /* IAP Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17916836136B612A0019DBA2 /* Build configuration list for PBXNativeTarget "IAP Sample" */;
+			buildPhases = (
+				17916811136B612A0019DBA2 /* Sources */,
+				17916812136B612A0019DBA2 /* Frameworks */,
+				17916813136B612A0019DBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IAP Sample";
+			productName = "IAP Sample";
+			productReference = 17916815136B612A0019DBA2 /* IAP Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1791680C136B61290019DBA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Smart Goat Web Design";
+			};
+			buildConfigurationList = 1791680F136B61290019DBA2 /* Build configuration list for PBXProject "IAP Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1791680A136B61290019DBA2;
+			productRefGroup = 17916816136B612A0019DBA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17916814136B612A0019DBA2 /* IAP Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17916813136B612A0019DBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17916824136B612A0019DBA2 /* InfoPlist.strings in Resources */,
+				1791682D136B612A0019DBA2 /* MainWindow.xib in Resources */,
+				17916833136B612A0019DBA2 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17916811136B612A0019DBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17916827136B612A0019DBA2 /* main.m in Sources */,
+				1791682A136B612A0019DBA2 /* IAP_SampleAppDelegate.m in Sources */,
+				17916830136B612A0019DBA2 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17916822136B612A0019DBA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17916823136B612A0019DBA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1791682B136B612A0019DBA2 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1791682C136B612A0019DBA2 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		17916831136B612A0019DBA2 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17916832136B612A0019DBA2 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17916834136B612A0019DBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17916835136B612A0019DBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		17916837136B612A0019DBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IAP Sample/IAP Sample-Prefix.pch";
+				INFOPLIST_FILE = "IAP Sample/IAP Sample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17916838136B612A0019DBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IAP Sample/IAP Sample-Prefix.pch";
+				INFOPLIST_FILE = "IAP Sample/IAP Sample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1791680F136B61290019DBA2 /* Build configuration list for PBXProject "IAP Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17916834136B612A0019DBA2 /* Debug */,
+				17916835136B612A0019DBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17916836136B612A0019DBA2 /* Build configuration list for PBXNativeTarget "IAP Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17916837136B612A0019DBA2 /* Debug */,
+				17916838136B612A0019DBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1791680C136B61290019DBA2 /* Project object */;
+}
