@@ -1,8 +1,8 @@
-== IAP Sample ==
+# IAP Sample
 
 This is a really basic app that demonstrates the bare minimum you need to do to perform in-app purchases in iOS.
 
-=== To Use ===
+## To Use 
 
 1. Change the bundle identifier to your own that you've created in the iOS Development Center.
 2. In InAppPurchasesManager.m, find this line:
