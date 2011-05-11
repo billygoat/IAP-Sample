@@ -16,6 +16,12 @@
 		1791682D136B612A0019DBA2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1791682B136B612A0019DBA2 /* MainWindow.xib */; };
 		17916830136B612A0019DBA2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1791682F136B612A0019DBA2 /* RootViewController.m */; };
 		17916833136B612A0019DBA2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17916831136B612A0019DBA2 /* RootViewController.xib */; };
+		1793B4A51378E8F80013A390 /* InAppPurchasesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1793B4A41378E8F80013A390 /* InAppPurchasesManager.m */; };
+		1793B4A91379BE2C0013A390 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1793B4A81379BE2C0013A390 /* Constants.m */; };
+		1793B4AC1379C3B10013A390 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1793B4AB1379C3B10013A390 /* StoreKit.framework */; };
+		1793B4AF1379C4BB0013A390 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1793B4AE1379C4BB0013A390 /* SKProduct+LocalizedPrice.m */; };
+		1793B4B41379EACA0013A390 /* PurchasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1793B4B21379EACA0013A390 /* PurchasesViewController.m */; };
+		1793B4B51379EACA0013A390 /* PurchasesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1793B4B31379EACA0013A390 /* PurchasesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +29,27 @@
 		17916819136B612A0019DBA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1791681B136B612A0019DBA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1791681D136B612A0019DBA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		17916821136B612A0019DBA2 /* IAP Sample-Info.plist */ = {isa = PBXFileReference; path = "IAP Sample-Info.plist"; sourceTree = "<group>"; };
+		17916821136B612A0019DBA2 /* IAP Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IAP Sample-Info.plist"; sourceTree = "<group>"; };
 		17916823136B612A0019DBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		17916825136B612A0019DBA2 /* IAP Sample-Prefix.pch */ = {isa = PBXFileReference; path = "IAP Sample-Prefix.pch"; sourceTree = "<group>"; };
+		17916825136B612A0019DBA2 /* IAP Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAP Sample-Prefix.pch"; sourceTree = "<group>"; };
 		17916826136B612A0019DBA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17916828136B612A0019DBA2 /* IAP_SampleAppDelegate.h */ = {isa = PBXFileReference; path = IAP_SampleAppDelegate.h; sourceTree = "<group>"; };
+		17916828136B612A0019DBA2 /* IAP_SampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAP_SampleAppDelegate.h; sourceTree = "<group>"; };
 		17916829136B612A0019DBA2 /* IAP_SampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAP_SampleAppDelegate.m; sourceTree = "<group>"; };
 		1791682C136B612A0019DBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		1791682E136B612A0019DBA2 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		1791682E136B612A0019DBA2 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1791682F136B612A0019DBA2 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		17916832136B612A0019DBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		1793B4A31378E8F80013A390 /* InAppPurchasesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchasesManager.h; sourceTree = "<group>"; };
+		1793B4A41378E8F80013A390 /* InAppPurchasesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchasesManager.m; sourceTree = "<group>"; };
+		1793B4A71379BE2C0013A390 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1793B4A81379BE2C0013A390 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		1793B4AB1379C3B10013A390 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1793B4AD1379C4BB0013A390 /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
+		1793B4AE1379C4BB0013A390 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
+		1793B4B01379C4F60013A390 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		1793B4B11379EACA0013A390 /* PurchasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasesViewController.h; sourceTree = "<group>"; };
+		1793B4B21379EACA0013A390 /* PurchasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasesViewController.m; sourceTree = "<group>"; };
+		1793B4B31379EACA0013A390 /* PurchasesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchasesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1793B4AC1379C3B10013A390 /* StoreKit.framework in Frameworks */,
 				1791681A136B612A0019DBA2 /* UIKit.framework in Frameworks */,
 				1791681C136B612A0019DBA2 /* Foundation.framework in Frameworks */,
 				1791681E136B612A0019DBA2 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +70,7 @@
 		1791680A136B61290019DBA2 = {
 			isa = PBXGroup;
 			children = (
+				1793B4AB1379C3B10013A390 /* StoreKit.framework */,
 				1791681F136B612A0019DBA2 /* IAP Sample */,
 				17916818136B612A0019DBA2 /* Frameworks */,
 				17916816136B612A0019DBA2 /* Products */,
@@ -79,6 +98,13 @@
 		1791681F136B612A0019DBA2 /* IAP Sample */ = {
 			isa = PBXGroup;
 			children = (
+				1793B4B01379C4F60013A390 /* SynthesizeSingleton.h */,
+				1793B4AD1379C4BB0013A390 /* SKProduct+LocalizedPrice.h */,
+				1793B4AE1379C4BB0013A390 /* SKProduct+LocalizedPrice.m */,
+				1793B4A71379BE2C0013A390 /* Constants.h */,
+				1793B4A81379BE2C0013A390 /* Constants.m */,
+				1793B4A31378E8F80013A390 /* InAppPurchasesManager.h */,
+				1793B4A41378E8F80013A390 /* InAppPurchasesManager.m */,
 				17916828136B612A0019DBA2 /* IAP_SampleAppDelegate.h */,
 				17916829136B612A0019DBA2 /* IAP_SampleAppDelegate.m */,
 				1791682B136B612A0019DBA2 /* MainWindow.xib */,
@@ -86,6 +112,9 @@
 				1791682F136B612A0019DBA2 /* RootViewController.m */,
 				17916831136B612A0019DBA2 /* RootViewController.xib */,
 				17916820136B612A0019DBA2 /* Supporting Files */,
+				1793B4B11379EACA0013A390 /* PurchasesViewController.h */,
+				1793B4B21379EACA0013A390 /* PurchasesViewController.m */,
+				1793B4B31379EACA0013A390 /* PurchasesViewController.xib */,
 			);
 			path = "IAP Sample";
 			sourceTree = "<group>";
@@ -154,6 +183,7 @@
 				17916824136B612A0019DBA2 /* InfoPlist.strings in Resources */,
 				1791682D136B612A0019DBA2 /* MainWindow.xib in Resources */,
 				17916833136B612A0019DBA2 /* RootViewController.xib in Resources */,
+				1793B4B51379EACA0013A390 /* PurchasesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +197,10 @@
 				17916827136B612A0019DBA2 /* main.m in Sources */,
 				1791682A136B612A0019DBA2 /* IAP_SampleAppDelegate.m in Sources */,
 				17916830136B612A0019DBA2 /* RootViewController.m in Sources */,
+				1793B4A51378E8F80013A390 /* InAppPurchasesManager.m in Sources */,
+				1793B4A91379BE2C0013A390 /* Constants.m in Sources */,
+				1793B4AF1379C4BB0013A390 /* SKProduct+LocalizedPrice.m in Sources */,
+				1793B4B41379EACA0013A390 /* PurchasesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,11 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Smart Goat, L.L.C.";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IAP Sample/IAP Sample-Prefix.pch";
 				INFOPLIST_FILE = "IAP Sample/IAP Sample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5445DFBD-D7DA-4D06-BE67-9D10789B3000";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,6 +315,7 @@
 				17916838136B612A0019DBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "IAP_SampleAppDelegate.h"
+#import "InAppPurchasesManager.h"
 
 @implementation IAP_SampleAppDelegate
 
@@ -19,6 +20,15 @@
 {
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
+    InAppPurchasesManager *iap = [InAppPurchasesManager sharedInAppPurchasesManager];
+    [iap loadStore];
+    
+    // For testing
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"" forKey:@"transactionID"];
+    [defaults setObject:[NSNumber numberWithInt:0] forKey:@"button"];
+    [defaults setObject:[NSNumber numberWithInt:0] forKey:@"slider"];
+    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;

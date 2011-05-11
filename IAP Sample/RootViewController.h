@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UITableViewController {
-
+    NSArray *products;
 }
 
+@property (nonatomic, retain) NSArray *products;
+
+- (void)receivedProductData:(NSNotification *)notice;
+- (void)transactionFinished:(NSNotification *)notice;
+- (void)purchase:(id)sender;
+- (void)viewPurchases:(id)sender;
 
 @end

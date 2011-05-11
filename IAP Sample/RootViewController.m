@@ -7,12 +7,29 @@
 //
 
 #import "RootViewController.h"
+#import "InAppPurchasesManager.h"
+#import "SKProduct+LocalizedPrice.h"
+#import <StoreKit/StoreKit.h>
+#import "PurchasesViewController.h"
 
 @implementation RootViewController
+
+@synthesize products;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedProductData:) name:kReceivedProductData object:nil];
+    InAppPurchasesManager *iap = [InAppPurchasesManager sharedInAppPurchasesManager];
+    if ([iap canMakePurchases]) {
+        [iap requestProductData];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't make purchases", @"Can't make purchases") message:NSLocalizedString(@"In-app purchasing is unavailable. Please check the purchasing options in the Settings app.", @"In-app purchasing is unavailable. Please check the purchasing options in the Settings app.") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"View Purchases" style:UIBarButtonItemStyleBordered target:self action:@selector(viewPurchases:)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,7 +68,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [products count];
 }
 
 // Customize the appearance of table view cells.
@@ -65,7 +82,20 @@
     }
 
     // Configure the cell.
+    SKProduct *prod = [products objectAtIndex:[indexPath row]];
+    cell.textLabel.text = prod.localizedTitle;
+    cell.detailTextLabel.text = prod.localizedDescription;
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:prod.localizedPrice forState:UIControlStateNormal];
+    button.frame = CGRectMake(0.0, 0.0, 44.0, 22.0);
+    button.tag = [indexPath row];
+    [button addTarget:self action:@selector(purchase:) forControlEvents:UIControlEventTouchUpInside];
+    [cell setAccessoryView:button];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Tap to Buy";
 }
 
 /*
@@ -135,6 +165,31 @@
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
+
+- (void)receivedProductData:(NSNotification *)notice {
+    self.products = (NSArray *)[notice object];
+    [self.tableView reloadData];
+}
+
+- (void)transactionFinished:(NSNotification *)notice {
+    BOOL isPurchased = [[notice object] boolValue];
+}
+
+- (void)purchase:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    InAppPurchasesManager *iap = [InAppPurchasesManager sharedInAppPurchasesManager];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(transactionFinished:) name:kTransactionFinished object:nil];
+    SKProduct *prod = [products objectAtIndex:button.tag];
+    [iap purchase:prod.productIdentifier];    
+}
+
+- (void)viewPurchases:(id)sender {
+    PurchasesViewController *purchases = [[PurchasesViewController alloc] init];
+    [self.navigationController presentModalViewController:purchases animated:YES];
+    [purchases release];
+    return;
+}
+
 
 - (void)dealloc
 {
